@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    
     <script>
         ///tạo một hàm tự định nghĩa truyền 6 tham số
         // so sánh 6 giá trị đấy với nhau
@@ -17,7 +18,41 @@
 //         return valueN
 //       }
 //    var valueFinal = func(1,2,3,4,5,6);
-//    console.log(valueFinal);
+//   document.write(valueFinal);
+function gui(a,b) {
+    var value0 ;
+    if(a > b) value0 = a + ' lớn hơn ' + b;
+    else if (a === b) value0 = a + ' bằng ' + b;
+    else value0 = a + ' nhỏ hơn ' + b; 
+    return value0;
+}
+var valueFinal = gui(2,3)
+console.log(valueFinal);
+
+
+
+
+
+
+var obj = {
+    ptm:function(a) {
+       console.log(a); 
+    },
+    obj1:{
+        value1:1,
+        value2:2
+    }
+}
+obj.ptm(2)
+console.log(obj.obj1);
+var arr = [
+    {
+    value1:1
+    },
+    [1,2,3,4]
+]
+var btm = ['2',2,function(params){},4,5,{value1:0},true]
+console.log(btm[6]);
     </script>
 </body>
 </html>
