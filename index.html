@@ -21,12 +21,19 @@
 //   document.write(valueFinal);
 function gui(a,b) {
     var value0 ;
-    if(a > b) value0 = a + ' lớn hơn ' + b;
-    else if (a === b) value0 = a + ' bằng ' + b;
-    else value0 = a + ' nhỏ hơn ' + b; 
-    return value0;
+    if ((typeof a) === 'number' && (typeof b) ===  'number') {
+        if(a > b) value0 = a + ' lớn hơn ' + b;
+        else if (a === b) value0 = a + ' bằng ' + b;
+        else value0 = a + ' nhỏ hơn ' + b; 
+        return value0;
+    }
+    else if ((typeof a) !== 'number' && (typeof b) !== 'number') console.error(' 2 tham số  không phải kiểu dữ liễu number')
+     else if(typeof a !== 'number') console.error('tham số thứ nhất không phải kiểu dữ liễu number');
+     else if(typeof b !== 'number') console.error('tham số thứ hai không phải kiểu dữ liễu number');
+    
+    
 }
-var valueFinal = gui(2,3)
+var valueFinal = gui('2',4)
 console.log(valueFinal);
 
 
@@ -53,6 +60,18 @@ var arr = [
 ]
 var btm = ['2',2,function(params){},4,5,{value1:0},true]
 console.log(btm[6]);
+
+
+
+var so_sánh = [1,5,-1,1000,57765];
+console.log(so_sánh.sort(function(a=5,b=2) {
+    return -222
+}));
+
+var index = 'chúng ta ngu như bò'
+var b = prompt('nhập kí tự','')
+var slice = index.slice( index.indexOf(b) , index.indexOf(b) + b.length )
+console.log(slice);
     </script>
 </body>
 </html>
