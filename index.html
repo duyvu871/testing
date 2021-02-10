@@ -33,7 +33,7 @@ function gui(a,b) {
     
     
 }
-var valueFinal = gui('2',4)
+var valueFinal = gui(2,4)
 console.log(valueFinal);
 
 
@@ -72,6 +72,28 @@ var index = 'chúng ta ngu như bò'
 var b = prompt('nhập kí tự','')
 var slice = index.slice( index.indexOf(b) , index.indexOf(b) + b.length )
 console.log(slice);
+var value4 = '              Javascript thật là khó hiểu                   '
+var value5 = value4.indexOf('Javascript')
+//strings,indexOf('strings') dùng để hiển thị số thứ tự của chuỗi 
+var value6 = value4.slice(0,10)
+//strings.slice(đầu,cuối) dùng để cắt chuỗi
+var value7 = value4.replace('khó hiểu','dễ hiểu')
+//strings.replace('chuỗi cần thay','chuỗi thay') dùng để thay thế chuỗi
+var value8 = value4.toLowerCase(0)
+//strings.toLowerCase(đầu, cuối) dùng để đổi kí tự viết in hoa thành viết thường
+var value9 = value4.toUpperCase(0)
+//strings.toUpperCase(đầu, cuối) dùng để đổi kí tự viết thường thành viết in hoa
+var value10 = value4.trim()
+//strings.trim() dùng để xóa bỏ tất cả khoảng trắng ở đầu và cuối
+var value11 = value4.split('')
+//strings.split('strings') dùng để cắt chuỗi thành các mảng
+console.log(value5);
+console.log(value6);
+console.log(value7);
+console.log(value8);
+console.log(value9);
+console.log(value10);
+console.log(value11);
     </script>
 </body>
 </html>
